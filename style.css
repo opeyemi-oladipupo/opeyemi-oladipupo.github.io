@@ -160,10 +160,11 @@ body::before {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    height: 100dvh;                /* full viewport height but respects mobile browser toolbars */
     display: flex;
     align-items: center;
-    padding: 8rem 0 4rem;
+    padding: 8rem 2rem 4rem;       /* top, sides, bottom */
+    box-sizing: border-box;
 }
 
 .hero-container {
@@ -172,6 +173,41 @@ body::before {
     gap: 4rem;
     align-items: center;
 }
+
+.hero-content {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.3s;
+}
+
+.hero-greeting {
+    color: var(--color-text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
 
 .hero-content {
     opacity: 0;
@@ -815,5 +851,96 @@ button:focus {
     .certifications .project-card,
     .education .project-card {
         margin-bottom: 1.5rem;      /* reduce gap between cards */
+    }
+}
+/* Responsive adjustments for mobile/tablet */
+@media (max-width: 1024px) {
+    .hero {
+        height: auto;               /* let hero shrink naturally */
+        padding: 4rem 1.5rem;       /* reduce spacing */
+    }
+
+    .about-content {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects, .certifications, .education {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+
+    .projects-grid .project-card,
+    .certifications .project-card,
+    .education .project-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-image-wrapper {
+        order: -1;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .glow-ring {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .glow-ring {
+        width: 210px;
+        height: 210px;
     }
 }
