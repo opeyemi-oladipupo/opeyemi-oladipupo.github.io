@@ -159,12 +159,32 @@ body::before {
 }
 
 /* Hero Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;          
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;   
+}   
+
 .hero {
-    height: 100dvh;                /* full viewport height but respects mobile browser toolbars */
+    padding: 2rem 1rem;
+    min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
-    padding: 8rem 2rem 4rem;       /* top, sides, bottom */
-    box-sizing: border-box;
+}
+
+/* Mobile fix (works in desktop mode too) */
+@media (max-width: 1024px) {
+    header { height: 50px; }
+    body { padding-top: 50px; }
+    .hero { min-height: calc(100vh - 50px); padding: 1.5rem 1rem; }
 }
 
 .hero-container {
@@ -173,41 +193,6 @@ body::before {
     gap: 4rem;
     align-items: center;
 }
-
-.hero-content {
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards 0.3s;
-}
-
-.hero-greeting {
-    color: var(--color-text-secondary);
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero-subtitle {
-    font-size: 1.3rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 2rem;
-    line-height: 1.5;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
 
 .hero-content {
     opacity: 0;
@@ -815,132 +800,5 @@ button:focus {
     body {
         background: white;
         color: black;
-    }
-}
-
-
-/* Fix extra spacing for desktop mode on mobile */
-@media (max-width: 1024px) {
-    /* Hero Section */
-    .hero {
-        min-height: auto;           /* remove huge 100vh */
-        padding: 4rem 1.5rem;       /* reduce top and bottom spacing */
-    }
-
-    /* About Section */
-    .about-content {
-        margin-top: 1.5rem;         /* less spacing above content */
-        margin-bottom: 2rem;        /* reduce bottom spacing */
-    }
-
-    /* Projects, Certifications, Education Sections */
-    .projects,
-    .certifications,
-    .education {
-        padding-top: 2rem;          /* less spacing above section */
-        padding-bottom: 2rem;       /* less spacing below section */
-    }
-
-    /* Section Titles */
-    .section-title {
-        margin-bottom: 2rem;        /* smaller gap after title */
-    }
-
-    /* Project cards spacing */
-    .projects-grid .project-card,
-    .certifications .project-card,
-    .education .project-card {
-        margin-bottom: 1.5rem;      /* reduce gap between cards */
-    }
-}
-/* Responsive adjustments for mobile/tablet */
-@media (max-width: 1024px) {
-    .hero {
-        height: auto;               /* let hero shrink naturally */
-        padding: 4rem 1.5rem;       /* reduce spacing */
-    }
-
-    .about-content {
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .projects, .certifications, .education {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    .section-title {
-        margin-bottom: 2rem;
-    }
-
-    .projects-grid .project-card,
-    .certifications .project-card,
-    .education .project-card {
-        margin-bottom: 1.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-
-    .hero-image-wrapper {
-        order: -1;
-    }
-
-    .hero-title {
-        font-size: 2.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-image {
-        width: 220px;
-        height: 220px;
-    }
-
-    .glow-ring {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .hero-image {
-        width: 180px;
-        height: 180px;
-    }
-
-    .glow-ring {
-        width: 210px;
-        height: 210px;
     }
 }
