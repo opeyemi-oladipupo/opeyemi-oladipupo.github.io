@@ -788,46 +788,57 @@ button:focus {
 
 
 /* ========================================
-   FINAL FIX: NO DARK GAP IN ANDROID CHROME DESKTOP VIEW
+   fixxes for mobile viewport height issues 
    ======================================== */
 
-/* 1. REMOVE HERO PADDING */
+/* 1. Fix viewport height */
+:root {
+    --vh: 1vh;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+/* 2. Header: Fixed + correct height */
+.header {
+    height: 80px !important;
+    padding: 1rem 2rem !important;
+    box-sizing: border-box !important;
+}
+
+/* 3. Hero: Full screen, no padding */
 .hero {
-    padding: 0 !important;
+    min-height: calc(var(--vh, 1vh) * 100) !important;
     min-height: 100vh !important;
+    padding: 0 !important;
+    margin: 0 !important;
     display: flex !important;
     align-items: center !important;
 }
 
-/* 2. ADD SPACE INSIDE .hero-container ONLY */
+/* 4. Space INSIDE hero container */
 .hero-container {
-    padding-top: 6rem !important;   /* Space below header */
+    padding-top: 2rem !important;
     padding-bottom: 4rem !important;
     width: 100% !important;
 }
 
-/* 3. REMOVE GAP BEFORE ABOUT */
+/* 5. About: Clean gap */
 .about {
+    padding-top: 0 !important;
     margin-top: 0 !important;
-    padding-top: 4rem !important;
+}
+section + section {
+    margin-top: 4rem !important;
 }
 
-/* 4. FORCE FIX IN ANDROID CHROME DESKTOP MODE */
+/* 6. Force fix in Desktop Mode */
 @media (min-width: 769px) {
-    .hero-container {
-        padding-top: 6rem !important;
-    }
-    .about {
-        padding-top: 4rem !important;
-    }
-}
-
-/* 5. MOBILE NORMAL */
-@media (max-width: 768px) {
-    .hero-container {
-        padding-top: 5rem !important;
-    }
-    .about {
-        padding-top: 3rem !important;
-    }
+    .hero-container { padding-top: 2rem !important; }
+    section + section { margin-top: 4rem !important; }
 }
