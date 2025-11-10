@@ -782,37 +782,29 @@ button:focus {
     }
 }
 
-/* Fix extra spacing for desktop mode on mobile */
-@media (max-width: 1024px) {
-    /* Hero Section */
-    .hero {
-        min-height: auto;           /* remove huge 100vh */
-        padding: 4rem 1.5rem;       /* reduce top and bottom spacing */
-    }
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
-    /* About Section */
-    .about-content {
-        margin-top: 1.5rem;         /* less spacing above content */
-        margin-bottom: 2rem;        /* reduce bottom spacing */
-    }
+/* ========================================
+   THE FIX
+   ======================================== */
 
-    /* Projects, Certifications, Education Sections */
-    .projects,
-    .certifications,
-    .education {
-        padding-top: 2rem;          /* less spacing above section */
-        padding-bottom: 2rem;       /* less spacing below section */
-    }
+.hero {
+    padding: 0 !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+}
 
-    /* Section Titles */
-    .section-title {
-        margin-bottom: 2rem;        /* smaller gap after title */
-    }
+.hero-container {
+    padding-top: 6rem !important;
+    padding-bottom: 4rem !important;
+    width: 100% !important;
+}
 
-    /* Project cards spacing */
-    .projects-grid .project-card,
-    .certifications .project-card,
-    .education .project-card {
-        margin-bottom: 1.5rem;      /* reduce gap between cards */
-    }
+.about {
+    padding-top: 4rem !important;
+    margin-top: 0 !important;
 }
