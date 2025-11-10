@@ -163,7 +163,6 @@ body::before {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 0 4rem;
 }
 
 .hero-container {
@@ -787,54 +786,48 @@ button:focus {
     text-justify: inter-word;
 }
 
+
 /* ========================================
-   FINAL FIX: ANDROID CHROME DESKTOP VIEW
-   NO DARK GAP BETWEEN HEADER & HERO
+   FINAL FIX: NO DARK GAP IN ANDROID CHROME DESKTOP VIEW
    ======================================== */
 
-/* 1. FORCE HERO TO START RIGHT BELOW HEADER */
+/* 1. REMOVE HERO PADDING */
 .hero {
-    min-height: calc(100vh - 70px) !important;
-    padding: 2rem 0 !important;
-    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
-/* 2. PUSH CONTENT INSIDE HERO (not section) */
+/* 2. ADD SPACE INSIDE .hero-container ONLY */
 .hero-container {
-    margin-top: 0 !important;
-    padding-top: 2rem !important;
+    padding-top: 6rem !important;   /* Space below header */
+    padding-bottom: 4rem !important;
+    width: 100% !important;
 }
 
 /* 3. REMOVE GAP BEFORE ABOUT */
 .about {
     margin-top: 0 !important;
-    padding-top: 3rem !important;
+    padding-top: 4rem !important;
 }
 
 /* 4. FORCE FIX IN ANDROID CHROME DESKTOP MODE */
 @media (min-width: 769px) {
-    .hero {
-        min-height: calc(100vh - 70px) !important;
-        padding: 2rem 0 !important;
-    }
     .hero-container {
-        padding-top: 2rem !important;
+        padding-top: 6rem !important;
     }
     .about {
-        padding-top: 3rem !important;
+        padding-top: 4rem !important;
     }
 }
 
-/* 5. MOBILE NORMAL (keep responsive) */
+/* 5. MOBILE NORMAL */
 @media (max-width: 768px) {
-    .hero {
-        min-height: calc(100vh - 60px);
-        padding: 1.5rem 0;
-    }
     .hero-container {
-        padding-top: 1.5rem;
+        padding-top: 5rem !important;
     }
     .about {
-        padding-top: 2.5rem;
+        padding-top: 3rem !important;
     }
 }
