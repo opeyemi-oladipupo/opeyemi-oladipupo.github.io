@@ -788,80 +788,53 @@ button:focus {
 }
 
 /* ========================================
-   ULTIMATE FIX: ANDROID CHROME DESKTOP VIEW
-   NO GAP. NO EXCUSES.
+   FINAL FIX: ANDROID CHROME DESKTOP VIEW
+   NO DARK GAP BETWEEN HEADER & HERO
    ======================================== */
 
-/* 1. FORCE HEADER HEIGHT (REAL: ~70px) */
-.header {
-    height: 70px !important;
-    padding: 1rem 2rem !important;
-    box-sizing: border-box !important;
-}
-
-/* 2. PUSH BODY BELOW HEADER */
-body {
-    padding-top: 70px !important;
-    margin: 0 !important;
-}
-
-/* 3. HERO: FULL SCREEN MINUS HEADER */
+/* 1. FORCE HERO TO START RIGHT BELOW HEADER */
 .hero {
     min-height: calc(100vh - 70px) !important;
-    padding: 0 !important;
+    padding: 2rem 0 !important;
     margin: 0 !important;
-    display: flex !important;
-    align-items: flex-start !important;
-    justify-content: center !important;
 }
 
-/* 4. SPACE INSIDE HERO */
+/* 2. PUSH CONTENT INSIDE HERO (not section) */
 .hero-container {
-    margin-top: 2rem !important;
-    width: 100% !important;
-}
-
-/* 5. ABOUT: KILL ALL TOP SPACE */
-.about,
-section {
-    padding-top: 0 !important;
     margin-top: 0 !important;
+    padding-top: 2rem !important;
 }
+
+/* 3. REMOVE GAP BEFORE ABOUT */
 .about {
-    margin-top: 3rem !important;
+    margin-top: 0 !important;
+    padding-top: 3rem !important;
 }
 
-/* 6. FIX GLOW (body::before) */
-body::before {
-    top: 70px !important;
-    height: calc(100% - 70px) !important;
-}
-
-/* 7. FORCE DESKTOP VIEW ON MOBILE (ANDROID CHROME) */
-@media screen and (min-width: 1px) {
-    .header { height: 70px !important; }
-    body { padding-top: 70px !important; }
-    .hero { 
-        min-height: calc(100vh - 70px) !important; 
-        padding: 0 !important; 
+/* 4. FORCE FIX IN ANDROID CHROME DESKTOP MODE */
+@media (min-width: 769px) {
+    .hero {
+        min-height: calc(100vh - 70px) !important;
+        padding: 2rem 0 !important;
     }
-    .hero-container { margin-top: 2rem !important; }
-    .about { margin-top: 3rem !important; padding-top: 0 !important; }
-    body::before { top: 70px !important; height: calc(100% - 70px) !important; }
+    .hero-container {
+        padding-top: 2rem !important;
+    }
+    .about {
+        padding-top: 3rem !important;
+    }
 }
 
-/* 8. MOBILE NORMAL (KEEP RESPONSIVE) */
+/* 5. MOBILE NORMAL (keep responsive) */
 @media (max-width: 768px) {
-    .header { height: 60px !important; padding: 0.8rem 1.5rem !important; }
-    body { padding-top: 60px !important; }
-    .hero { min-height: calc(100vh - 60px); }
-    .hero-container { margin-top: 1.5rem !important; }
-    .about { margin-top: 2rem !important; }
-    body::before { top: 60px !important; height: calc(100% - 60px) !important; }
+    .hero {
+        min-height: calc(100vh - 60px);
+        padding: 1.5rem 0;
+    }
+    .hero-container {
+        padding-top: 1.5rem;
+    }
+    .about {
+        padding-top: 2.5rem;
+    }
 }
-
-
-
-
-
-
