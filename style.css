@@ -782,77 +782,86 @@ button:focus {
     }
 }
 
-/* ========================================
-   FINAL FIX: NO GAP IN ANDROID CHROME DESKTOP VIEW
-   HEADER HEIGHT = 84px (CONFIRMED)
-   ======================================== */
-
-/* 1. Lock header height */
-.header {
-    height: 84px !important;
-}
-
-/* 2. Push body below header */
-body {
-    padding-top: 84px !important;
-    margin-top: 0 !important;
-}
-
-/* 3. Hero: Full screen MINUS header */
-.hero {
-    min-height: calc(100vh - 84px) !important;
-    padding: 1.5rem 0 !important;
-    margin: 0 !important;
-}
-
-/* 4. Space inside hero */
-.hero-content,
-.hero-image-wrapper {
-    margin-top: 2rem !important;
-}
-
-/* 5. About: Small gap after hero */
-.about {
-    padding-top: 0 !important;
-    margin-top: 3rem !important;
-}
-
-/* 6. Fix glow background */
-body::before {
-    top: 84px !important;
-    height: calc(100% - 84px) !important;
-}
-
-/* 7. FORCE FIX IN DESKTOP MODE ON MOBILE */
-@media (min-width: 769px) {
-    .hero {
-        min-height: calc(100vh - 84px) !important;
-        padding: 1.5rem 0 !important;
-    }
-    body {
-        padding-top: 84px !important;
-    }
-    .about {
-        margin-top: 3rem !important;
-    }
-}
-
-/* 8. Mobile normal */
-@media (max-width: 768px) {
-    .header { height: 74px !important; }
-    body { padding-top: 74px !important; }
-    .hero { min-height: calc(100vh - 74px); padding: 1rem 0; }
-    .hero-content,
-    .hero-image-wrapper { margin-top: 1.5rem; }
-    .about { margin-top: 2rem; }
-    body::before { top: 74px !important; height: calc(100% - 74px) !important; }
-}
-
-
-
-
-
 .text-justify {
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* ========================================
+   ULTIMATE FIX: ANDROID CHROME DESKTOP VIEW
+   NO GAP. NO EXCUSES.
+   ======================================== */
+
+/* 1. FORCE HEADER HEIGHT (REAL: ~70px) */
+.header {
+    height: 70px !important;
+    padding: 1rem 2rem !important;
+    box-sizing: border-box !important;
+}
+
+/* 2. PUSH BODY BELOW HEADER */
+body {
+    padding-top: 70px !important;
+    margin: 0 !important;
+}
+
+/* 3. HERO: FULL SCREEN MINUS HEADER */
+.hero {
+    min-height: calc(100vh - 70px) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+/* 4. SPACE INSIDE HERO */
+.hero-container {
+    margin-top: 2rem !important;
+    width: 100% !important;
+}
+
+/* 5. ABOUT: KILL ALL TOP SPACE */
+.about,
+section {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+.about {
+    margin-top: 3rem !important;
+}
+
+/* 6. FIX GLOW (body::before) */
+body::before {
+    top: 70px !important;
+    height: calc(100% - 70px) !important;
+}
+
+/* 7. FORCE DESKTOP VIEW ON MOBILE (ANDROID CHROME) */
+@media screen and (min-width: 1px) {
+    .header { height: 70px !important; }
+    body { padding-top: 70px !important; }
+    .hero { 
+        min-height: calc(100vh - 70px) !important; 
+        padding: 0 !important; 
+    }
+    .hero-container { margin-top: 2rem !important; }
+    .about { margin-top: 3rem !important; padding-top: 0 !important; }
+    body::before { top: 70px !important; height: calc(100% - 70px) !important; }
+}
+
+/* 8. MOBILE NORMAL (KEEP RESPONSIVE) */
+@media (max-width: 768px) {
+    .header { height: 60px !important; padding: 0.8rem 1.5rem !important; }
+    body { padding-top: 60px !important; }
+    .hero { min-height: calc(100vh - 60px); }
+    .hero-container { margin-top: 1.5rem !important; }
+    .about { margin-top: 2rem !important; }
+    body::before { top: 60px !important; height: calc(100% - 60px) !important; }
+}
+
+
+
+
+
+
