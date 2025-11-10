@@ -788,23 +788,66 @@ button:focus {
 }
 
 /* ========================================
-   THE FIX
+   FINAL SIMPLE CSS-ONLY FIX (CLAUDE + GROK)
+   NO GAP IN ANDROID CHROME/FIREFOX DESKTOP VIEW
    ======================================== */
 
+/* 1. HERO: Fixed padding, no min-height */
 .hero {
-    padding: 0 !important;
-    min-height: 100vh !important;
     display: flex !important;
     align-items: center !important;
+    padding: 150px 0 80px 0 !important;
+    margin: 0 !important;
 }
 
-.hero-container {
-    padding-top: 6rem !important;
-    padding-bottom: 4rem !important;
+/* 2. HEADER: Fixed on top */
+.header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     width: 100% !important;
+    margin: 0 !important;
+    z-index: 1000 !important;
 }
 
-.about {
-    padding-top: 4rem !important;
-    margin-top: 0 !important;
+/* 3. BODY & HTML: No gaps */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* 4. MAIN: No margin */
+main {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 5. BACKGROUND: Full cover */
+body::before {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* 6. ALL SECTIONS: Clean spacing */
+section {
+    padding: 80px 0 !important;
+    margin: 0 !important;
+}
+
+/* 7. MOBILE */
+@media (max-width: 768px) {
+    .hero { padding: 120px 0 60px 0 !important; }
+    section { padding: 60px 0 !important; }
+}
+
+/* 8. DESKTOP (INCLUDING ANDROID DESKTOP VIEW) */
+@media (min-width: 769px) {
+    .hero { padding: 180px 0 100px 0 !important; }
 }
