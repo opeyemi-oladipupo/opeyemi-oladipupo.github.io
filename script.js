@@ -154,18 +154,6 @@ function debounce(func, wait = 10, immediate = true) {
     };
 }
 
-
-// FIX ANDROID CHROME/FIREFOX DESKTOP VIEW
-(function() {
-    function setVH() {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', vh + 'px');
-    }
-    setVH();
-    window.addEventListener('resize', setVH);
-    window.addEventListener('orientationchange', setVH);
-})();
-
 // Console message for developers
 console.log('%c👋 Hello there!', 'font-size: 20px; font-weight: bold; color: #6366f1;');
 console.log('%cLooking at the code? Feel free to reach out!', 'font-size: 14px; color: #a8b2d1;');

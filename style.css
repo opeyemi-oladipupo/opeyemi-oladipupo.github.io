@@ -159,14 +159,11 @@ body::before {
 }
 
 /* Hero Section */
-
 .hero {
-    min-height: 100dvh !important; /* DYNAMIC VIEWPORT HEIGHT */
-    min-height: calc(var(--vh, 1vh) * 100) !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: flex !important;
-    align-items: center !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 4rem;
 }
 
 .hero-container {
@@ -783,46 +780,4 @@ button:focus {
         background: white;
         color: black;
     }
-}
-
-.text-justify {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-
-
-/* ========================================
-   NIGERIA ANDROID CHROME/FIREFOX DESKTOP FIX
-   NO DARK GAP. 100% WORKING.
-   ======================================== */
-
-/* 1. Fix viewport height */
-:root { --vh: 1vh; }
-html, body { height: 100%; margin: 0; }
-body { min-height: 100dvh; min-height: calc(var(--vh, 1vh) * 100); }
-
-/* 2. Header */
-.header {
-    height: 80px !important;
-    padding: 1rem 2rem !important;
-    box-sizing: border-box !important;
-}
-
-/* 3. Hero container spacing */
-.hero-container {
-    padding-top: 2rem !important;
-    padding-bottom: 4rem !important;
-    width: 100% !important;
-}
-
-/* 4. About section */
-.about {
-    margin-top: 0 !important;
-    padding-top: 4rem !important;
-}
-
-/* 5. FORCE FIX IN DESKTOP VIEW (NO MEDIA QUERY NEEDED) */
-.hero, .hero-container, .about, body, .header {
-    /* Force override */
 }
