@@ -159,32 +159,11 @@ body::before {
 }
 
 /* Hero Section */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;          
-    z-index: 1000;
-}
-
-body {
-    margin: 0;
-    padding-top: 60px;   
-}   
-
 .hero {
-    padding: 2rem 1rem;
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
     display: flex;
     align-items: center;
-}
-
-/* Mobile fix (works in desktop mode too) */
-@media (max-width: 1024px) {
-    header { height: 50px; }
-    body { padding-top: 50px; }
-    .hero { min-height: calc(100vh - 50px); padding: 1.5rem 1rem; }
+    padding: 8rem 0 4rem;
 }
 
 .hero-container {
@@ -800,5 +779,64 @@ button:focus {
     body {
         background: white;
         color: black;
+    }
+}
+
+/* ========================================
+   FIX: NO GAP IN CHROME ANDROID DESKTOP VIEW
+   ======================================== */
+
+/* 1. Reserve space for fixed header */
+body {
+    padding-top: 80px; /* Matches header height (~5rem + padding) */
+}
+
+/* 2. Hero: Remove 100vh + huge padding */
+.hero {
+    min-height: calc(100vh - 80px) !important; /* Full height MINUS header */
+    padding: 2rem 0 !important; /* Minimal spacing */
+    align-items: flex-start !important; /* Align top */
+}
+
+/* 3. Push hero content down slightly (not the whole section) */
+.hero-content {
+    margin-top: 2rem; /* Space below header */
+}
+.hero-image-wrapper {
+    margin-top: 2rem;
+}
+
+/* 4. About section: Remove huge top padding */
+.about {
+    margin-top: 3rem !important; /* Small gap after hero */
+    padding-top: 0 !important;
+}
+
+/* 5. Force same fix in desktop view on mobile */
+@media (min-width: 769px) {
+    .hero {
+        min-height: calc(100vh - 80px) !important;
+        padding: 2rem 0 !important;
+    }
+    body {
+        padding-top: 80px !important;
+    }
+}
+
+/* 6. Mobile (normal) — keep responsive */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    .hero {
+        min-height: calc(100vh - 70px);
+        padding: 1.5rem 0;
+    }
+    .hero-content,
+    .hero-image-wrapper {
+        margin-top: 1.5rem;
+    }
+    .about {
+        margin-top: 2rem;
     }
 }
