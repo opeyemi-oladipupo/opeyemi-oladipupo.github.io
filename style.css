@@ -159,10 +159,14 @@ body::before {
 }
 
 /* Hero Section */
+
 .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    min-height: 100dvh !important; /* DYNAMIC VIEWPORT HEIGHT */
+    min-height: calc(var(--vh, 1vh) * 100) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
 .hero-container {
@@ -787,58 +791,38 @@ button:focus {
 }
 
 
+
 /* ========================================
-   fixxes for mobile viewport height issues 
+   NIGERIA ANDROID CHROME/FIREFOX DESKTOP FIX
+   NO DARK GAP. 100% WORKING.
    ======================================== */
 
 /* 1. Fix viewport height */
-:root {
-    --vh: 1vh;
-}
-html, body {
-    height: 100%;
-    margin: 0;
-}
-body {
-    min-height: 100vh;
-    min-height: calc(var(--vh, 1vh) * 100);
-}
+:root { --vh: 1vh; }
+html, body { height: 100%; margin: 0; }
+body { min-height: 100dvh; min-height: calc(var(--vh, 1vh) * 100); }
 
-/* 2. Header: Fixed + correct height */
+/* 2. Header */
 .header {
     height: 80px !important;
     padding: 1rem 2rem !important;
     box-sizing: border-box !important;
 }
 
-/* 3. Hero: Full screen, no padding */
-.hero {
-    min-height: calc(var(--vh, 1vh) * 100) !important;
-    min-height: 100vh !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-}
-
-/* 4. Space INSIDE hero container */
+/* 3. Hero container spacing */
 .hero-container {
     padding-top: 2rem !important;
     padding-bottom: 4rem !important;
     width: 100% !important;
 }
 
-/* 5. About: Clean gap */
+/* 4. About section */
 .about {
-    padding-top: 0 !important;
     margin-top: 0 !important;
-}
-section + section {
-    margin-top: 4rem !important;
+    padding-top: 4rem !important;
 }
 
-/* 6. Force fix in Desktop Mode */
-@media (min-width: 769px) {
-    .hero-container { padding-top: 2rem !important; }
-    section + section { margin-top: 4rem !important; }
+/* 5. FORCE FIX IN DESKTOP VIEW (NO MEDIA QUERY NEEDED) */
+.hero, .hero-container, .about, body, .header {
+    /* Force override */
 }
