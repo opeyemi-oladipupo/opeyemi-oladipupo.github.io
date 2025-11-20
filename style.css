@@ -163,10 +163,9 @@ body::before {
     min-height: 100svh;
     display: flex;
     align-items: center;
-    padding-top: 80px; /* adjust for fixed header */
+    padding-top: 120px; /* adjust for fixed header */
     padding-bottom: 80px;
 }
-
 
 .hero-container {
     display: grid;
@@ -787,9 +786,4 @@ button:focus {
 .text-justify {
     text-align: justify;
     text-justify: inter-word;
-}
-
-.hero {
-    min-height: 100svh; /* fixes Android Chrome desktop view spacing */
-    
 }
