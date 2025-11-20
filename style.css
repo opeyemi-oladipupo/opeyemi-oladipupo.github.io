@@ -41,7 +41,7 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto%;
     background: radial-gradient(circle at 20% 30%, var(--color-glow) 0%, transparent 50%),
                 radial-gradient(circle at 80% 70%, var(--color-glow-blue) 0%, transparent 50%);
     pointer-events: none;
@@ -165,8 +165,7 @@ body::before {
     padding-top: 120px !important;  /* space for fixed header */
     padding-bottom: 80px !important;
     margin: 0 !important;
-    min-height: auto !important;     /* remove 100vh/min-height issues */
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: auto !important;
 }  
 
 /* ALL SECTIONS CLEAN SPACING */
