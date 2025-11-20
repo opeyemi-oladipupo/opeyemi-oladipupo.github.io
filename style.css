@@ -166,19 +166,14 @@ body::before {
     padding-bottom: 80px !important;
     margin: 0 !important;
     min-height: auto !important;     /* remove 100vh/min-height issues */
-}
+    height: calc(var(--vh, 1vh) * 100);
+}  
 
 /* ALL SECTIONS CLEAN SPACING */
 section {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
     margin: 0 !important;
-}
-
-/* MOBILE ADJUSTMENT */
-@media (max-width: 768px) {
-    .hero { padding-top: 100px !important; padding-bottom: 60px !important; }
-    section { padding-top: 60px !important; padding-bottom: 60px !important; }
 }
 
 
