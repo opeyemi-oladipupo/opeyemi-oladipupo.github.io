@@ -158,14 +158,29 @@ body::before {
     top: 8px;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
-    min-height: 100svh;
-    display: flex;
-    align-items: center;
-    padding-top: 120px; /* adjust for fixed header */
-    padding-bottom: 80px;
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 120px !important;  /* space for fixed header */
+    padding-bottom: 80px !important;
+    margin: 0 !important;
+    min-height: auto !important;     /* remove 100vh/min-height issues */
 }
+
+/* ALL SECTIONS CLEAN SPACING */
+section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    margin: 0 !important;
+}
+
+/* MOBILE ADJUSTMENT */
+@media (max-width: 768px) {
+    .hero { padding-top: 100px !important; padding-bottom: 60px !important; }
+    section { padding-top: 60px !important; padding-bottom: 60px !important; }
+}
+
 
 .hero-container {
     display: grid;
