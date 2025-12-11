@@ -1,311 +1,218 @@
+<!-- FULL UPDATED HTML WITH WEB + DATA SECTIONS (WORKS WITH YOUR EXISTING CSS & JS) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Opeyemi Oladipupo - Front-End & WordPress Developer. View my portfolio of websites and web development projects.">
+    <meta name="description" content="Opeyemi Oladipupo - Front-End, WordPress & Data Engineering Portfolio">
     <meta name="author" content="Opeyemi Oladipupo">
 
-<!-- Open Graph / Social Media -->
     <meta property="og:title" content="Opeyemi Oladipupo - Portfolio">
-    <meta property="og:description" content="Front-End & WordPress Developer | Building responsive, modern websites for businesses">
-    <meta property="og:type" content="website">
+    <meta property="og:description" content="Front-End, WordPress & Data Engineering Portfolio">
 
-<!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Opeyemi Oladipupo — Portfolio">
-    <meta name="twitter:description" content="Front-End & WordPress Developer | Building responsive, modern websites for businesses">
+    <meta name="twitter:description" content="Front-End, WordPress & Data Engineering Portfolio">
 
-<!-- Page Title & Favicon -->
-    <title>Opeyemi Oladipupo - Front-End & WordPress Developer</title>
+    <title>Opeyemi Oladipupo - Developer & Data Engineer</title>
     <link rel="icon" type="image/png" href="images/me.jpg">
 
-<!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav-brand">Opeyemi Oladipupo</div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <p class="hero-greeting">Hi there, I'm</p>
-                    <h1 class="hero-title">Opeyemi Oladipupo</h1>
-                    <p class="hero-subtitle">Front-End & WordPress Developer</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Hire Me 💼</a>
-                        <a href="#projects" class="btn btn-secondary">View Projects</a>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <div class="glow-ring"></div>
-                    <img src="images/me.jpg" alt="Opeyemi Oladipupo headshot" class="hero-image">
+<header class="header">
+    <nav class="nav container">
+        <div class="nav-brand">Opeyemi Oladipupo</div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#data-projects" class="nav-link">Data</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi there, I'm</p>
+                <h1 class="hero-title">Opeyemi Oladipupo</h1>
+                <p class="hero-subtitle">Front-End, WordPress & Data Engineering</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me 💼</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content fade-in">
-                    <p class="about-text text-justify">
-                        I help businesses bring their online presence to life. I build responsive, user-friendly websites that look great on any device and deliver real results. 
-                        My goal is to make your website fast, modern, and easy to manage, whether it’s a simple landing page, a corporate site, or a WordPress-powered business platform.
-                        I’m available for freelance or full-time opportunities. Let’s create something your audience will love.
-                    </p>
-                    
-                    <div class="tech-stack">
-                        <h3 class="tech-heading">Tech Stack</h3>
-                        <div class="tech-badges">
-                            <span class="badge"><i class="fab fa-html5"></i> HTML</span>
-                            <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
-                            <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="badge"><i class="fab fa-wordpress"></i> WordPress</span>
-                            <span class="badge"><i class="fab fa-react"></i> React</span>
-                            <span class="badge"><i class="fas fa-mobile-alt"></i> Mobile / App</span>
-                            <span class="badge"><i class="fas fa-git-alt"></i> Git</span>
-                            <span class="badge"><i class="fas fa-pencil-ruler"></i> Figma</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-image-wrapper">
+                <div class="glow-ring"></div>
+                <img src="images/me.jpg" alt="Opeyemi Oladipupo headshot" class="hero-image">
             </div>
-        </section>
-
-        
-        <!-- Certifications Section -->
-<section class="certifications" id="certifications">
-    <div class="container">
-        <h2 class="section-title">Certifications</h2>
-
-        <div class="projects-grid">
-
-            <!-- freeCodeCamp Responsive Web Design -->
-            <article class="project-card fade-in">
-                <div class="project-thumbnail">
-                    <img src="images/responsive-web-design-cert.jpg" alt="freeCodeCamp Responsive Web Design Certificate" loading="lazy">
-                </div>
-
-                <div class="project-info">
-                    <h4 class="project-title">Responsive Web Design</h4>
-                    <p class="project-description">freeCodeCamp</p>
-
-                    <div class="project-links">
-                        <a href="images/responsive-web-design-cert.jpg" target="_blank" class="btn-small btn-demo">View Certificate</a>
-                        <a href="https://freecodecamp.org/certification/fcc-2f1e12b3-df3e-415b-b10b-2d7a7519383f/responsive-web-design" target="_blank" class="btn-small btn-github">Verify Online</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- freeCodeCamp Scientific Computing with Python -->
-            <article class="project-card fade-in">
-                <div class="project-thumbnail">
-                    <img src="images/computing-with-python-cert.jpg" alt="freeCodeCamp Scientific Computing with Python Certificate" loading="lazy">
-                </div>
-
-                <div class="project-info">
-                    <h4 class="project-title">Scientific Computing with Python</h4>
-                    <p class="project-description">freeCodeCamp</p>
-
-                    <div class="project-links">
-                        <a href="images/computing-with-python-cert.jpg" target="_blank" class="btn-small btn-demo">View Certificate</a>
-                        <a href="https://freecodecamp.org/certification/fcc-2f1e12b3-df3e-415b-b10b-2d7a7519383f/scientific-computing-with-python-v7" target="_blank" class="btn-small btn-github">Verify Online</a>
-                    </div>
-                </div>
-            </article>
         </div>
-    </div>
-</section>
+    </section>
 
-
-
-
-<!-- Education Section -->
-<section class="education" id="education">
-    <div class="container">
-        <h2 class="section-title">Education</h2>
-
-        <div class="projects-grid">
-
-            <!-- BSc ( In View ) -->
-            <article class="project-card fade-in">
-                <div class="project-info">
-                    <h4 class="project-title">Bachelor of Science (BSc)</h4>
-                    <p class="project-description">Environmental Science & Resource Management - National Open University of Nigeria</p>
-                    <p class="project-description">In View</p>
-                </div>
-            </article>
-
-            <!-- HND Bachelor’s-Level Qualification (NQF Level 6) -->
-            <article class="project-card fade-in">
-                <div class="project-info">
-                    <h4 class="project-title">Higher National Diploma (HND)</h4>
-                    <p class="project-description">Microbiology - Moshood Abiola Polytechnic</p>
-                    <p class="project-description">2022–2024</p>
-                </div>
-            </article>
-
-            <!-- ND -->
-            <article class="project-card fade-in">
-                <div class="project-info">
-                    <h4 class="project-title">National Diploma (ND)</h4>
-                    <p class="project-description"><br>Science Laboratory Technology - The Polytechnic Ibadan<br></p>
-                    <p class="project-description">2017–2019</p>
-                </div>
-            </article>
-
-        </div>
-    </div>
-</section>
-  
-
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-
-                <!-- Web Projects -->
-                <div class="project-category">
-                    <!--<h3 class="category-heading">Web Development Projects</h3>-->
-                    <div class="projects-grid">
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/hafrufbak.png" alt="Hafrufbak Enterprises Limited website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Hafrufbak Enterprises Limited</h4>
-                                <p class="project-description">Real estate + interior design services across Nigeria, delivering seamless property discovery and transformation.</p>
-                                <div class="project-links">
-                                    <a href="https://hafrufbakltd.com.ng" target="_blank" rel="noopener noreferrer" class="btn-small btn-demo">Live Demo</a>
-                                    <a href="#" class="btn-small btn-github"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/npv.png" alt="Nigeria Property Verification website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Nigeria Property Verification</h4>
-                                <p class="project-description">Helps buyers avoid fake property deals by verifying ownership and providing honest appraisals.</p>
-                                <div class="project-links">
-                                    <a href="https://nigeriapropertyverification.ng" target="_blank" rel="noopener noreferrer" class="btn-small btn-demo">Live Demo</a>
-                                    <a href="#" class="btn-small btn-github"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/tomveen.png" alt="Tomveen Construction website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Tomveen Construction</h4>
-                                <p class="project-description">Engineering & construction company building future-ready infrastructure with quality and innovation.</p>
-                                <div class="project-links">
-                                    <a href="https://tomveen.com.ng" target="_blank" rel="noopener noreferrer" class="btn-small btn-demo">Live Demo</a>
-                                    <a href="#" class="btn-small btn-github"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-                        
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/summy.png" alt="Summy Solution & Technology website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Summy Solution & Technology</h4>
-                                <p class="project-description">Experts in air conditioning, refrigeration, mechanical services, and plumbing for reliable comfort.</p>
-                                <div class="project-links">
-                                    <a href="https://summysolutionandtechnology.com" target="_blank" rel="noopener noreferrer" class="btn-small btn-demo">Live Demo</a>
-                                    <a href="#" class="btn-small btn-github"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/mejohis.png" alt="MEJOHISANDCOMPANY website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">MEJOHISANDCOMPANY</h4>
-                                <p class="project-description">Welding & fabrication, mechanical services, haulage, logistics, and general industrial solutions across Edo State.</p>
-                                <div class="project-links">
-                                    <a href="https://mejohisandcompany.com" target="_blank" rel="noopener noreferrer" class="btn-small btn-demo">Live Demo</a>
-                                    <a href="#" class="btn-small btn-github"><i class="fab fa-github"></i> GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2 class="section-title">Let's Connect</h2>
-                <div class="contact-content fade-in">
-                    <p class="contact-intro">I’m always open to discussing new projects, collaborations, or ideas. Let’s build something amazing together.</p>
-                    <div class="contact-links">
-                        <a href="https://wa.me/+2348036627218" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Whatsapp Opeyemi">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>Whatsapp</span>
-                        </a>
-                        <a href="mailto:oladipupoope@gmail.com" class="contact-item" aria-label="Email Opeyemi">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/opeyemi-oladipupo-2a40bb222/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn profile">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/opeyemi-oladipupo" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="GitHub profile">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://x.com/yemi_44" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Twitter profile">
-                            <i class="fab fa-twitter"></i>
-                            <span>X</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
+    <section class="about" id="about">
         <div class="container">
-            <p>&copy; 2025 Opeyemi Oladipupo. All rights reserved.</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content fade-in">
+                <p class="about-text text-justify">
+                    I build fast, modern, user-friendly websites — and I also work with data engineering tools to create pipelines and analytical workflows.
+                    My focus is simple: helping businesses and teams get reliable digital solutions, whether it’s a website, automation, or data system.
+                </p>
+
+                <div class="tech-stack">
+                    <h3 class="tech-heading">Tech Stack</h3>
+                    <div class="tech-badges">
+                        <span class="badge"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="badge"><i class="fab fa-wordpress"></i> WordPress</span>
+                        <span class="badge"><i class="fab fa-react"></i> React</span>
+                        <span class="badge"><i class="fas fa-database"></i> SQL / Databases</span>
+                        <span class="badge"><i class="fas fa-python"></i> Python</span>
+                        <span class="badge"><i class="fas fa-code-branch"></i> Git</span>
+                        <span class="badge"><i class="fas fa-pencil-ruler"></i> Figma</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <!-- Floating Hire Me Button (Mobile Only) -->
-    <a href="#contact" class="floating-hire-btn" aria-label="Hire me">Hire Me 💼</a>
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
 
-    <script src="script.js"></script>
+            <div class="projects-grid">
+                <article class="project-card fade-in">
+                    <h4 class="project-title">Responsive Web Design</h4>
+                    <p>freeCodeCamp</p>
+                    <a href="images/responsive-web-design-cert.jpg" target="_blank" class="btn-small btn-demo">View Certificate</a>
+                </article>
+
+                <article class="project-card fade-in">
+                    <h4 class="project-title">Scientific Computing with Python</h4>
+                    <p>freeCodeCamp</p>
+                    <a href="images/computing-with-python-cert.jpg" target="_blank" class="btn-small btn-demo">View Certificate</a>
+                </article>
+
+                <article class="project-card fade-in">
+                    <h4 class="project-title">Intro to Data</h4>
+                    <p>IBM (Credly)</p>
+                </article>
+
+                <article class="project-card fade-in">
+                    <h4 class="project-title">Introduction to Data Engineering</h4>
+                    <p>IBM</p>
+                </article>
+
+                <article class="project-card fade-in">
+                    <h4 class="project-title">Python for Data Science</h4>
+                    <p>IBM</p>
+                </article>
+
+                <article class="project-card fade-in">
+                    <h4 class="project-title">Python Project for Data Engineering</h4>
+                    <p>IBM</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Web Development Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card fade-in">
+                    <img src="images/hafrufbak.png" alt="Hafrufbak Enterprises Limited" class="project-thumbnail">
+                    <h4 class="project-title">Hafrufbak Enterprises Limited</h4>
+                    <p>Real estate & interior design platform</p>
+                    <a href="https://hafrufbakltd.com.ng" class="btn-small btn-demo" target="_blank">Live Demo</a>
+                </article>
+
+                <article class="project-card fade-in">
+                    <img src="images/npv.png" alt="NPV" class="project-thumbnail">
+                    <h4 class="project-title">Nigeria Property Verification</h4>
+                    <p>Property verification & scam prevention site</p>
+                    <a href="https://nigeriapropertyverification.ng" class="btn-small btn-demo" target="_blank">Live Demo</a>
+                </article>
+
+                <article class="project-card fade-in">
+                    <img src="images/tomveen.png" alt="Tomveen" class="project-thumbnail">
+                    <h4 class="project-title">Tomveen Construction</h4>
+                    <p>Engineering & construction company website</p>
+                    <a href="https://tomveen.com.ng" class="btn-small btn-demo" target="_blank">Live Demo</a>
+                </article>
+
+                <article class="project-card fade-in">
+                    <img src="images/summy.png" alt="Summy" class="project-thumbnail">
+                    <h4 class="project-title">Summy Solution & Technology</h4>
+                    <p>Cooling & mechanical services website</p>
+                    <a href="https://summysolutionandtechnology.com" class="btn-small btn-demo" target="_blank">Live Demo</a>
+                </article>
+
+                <article class="project-card fade-in">
+                    <img src="images/mejohis.png" alt="MEJOHIS" class="project-thumbnail">
+                    <h4 class="project-title">MEJOHISANDCOMPANY</h4>
+                    <p>Industrial & logistics services</p>
+                    <a href="https://mejohisandcompany.com" class="btn-small btn-demo" target="_blank">Live Demo</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="data-projects">
+        <div class="container">
+            <h2 class="section-title">Data Engineering Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card fade-in">
+                    <h4 class="project-title">ETL Pipeline: CSV → Cleaning → SQL DB</h4>
+                    <p>Python ETL project for transforming raw CSV files into structured SQL tables.</p>
+                </article>
+
+                <article class="project-card fade-in">
+                    <h4 class="project-title">API Data Pipeline</h4>
+                    <p>Python pipeline that fetches API data, validates it, and loads into PostgreSQL.</p>
+                </article>
+
+                <article class="project-card fade-in">
+                    <h4 class="project-title">Automated Data Quality Checker</h4>
+                    <p>Rule-based validation script for detecting inconsistencies in incoming datasets.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>I’m available for freelance web projects, data engineering roles, and collaborations.</p>
+            <div class="contact-links">
+                <a href="https://wa.me/+2348036627218" class="contact-item"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                <a href="mailto:oladipupoope@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/opeyemi-oladipupo-2a40bb222/" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/opeyemi-oladipupo" class="contact-item"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://x.com/yemi_44" class="contact-item"><i class="fab fa-twitter"></i> X</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Opeyemi Oladipupo. All rights reserved.</p>
+    </div>
+</footer>
+
+<a href="#contact" class="floating-hire-btn">Hire Me 💼</a>
+
+<script src="script.js"></script>
 </body>
 </html>
