@@ -796,3 +796,13 @@ button:focus {
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* Hide extra GLightbox images without breaking layout */
+.extra-img {
+  position: absolute;  /* remove from flow */
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+/* End of style.css */
