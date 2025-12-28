@@ -805,4 +805,22 @@ button:focus {
   overflow: hidden;
   opacity: 0;
 }
+
+
+.section-title--summary {
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  
+  /* Remove default summary marker */
+  .section-title--summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* Optional hover effect */
+  .section-title--summary:hover {
+    opacity: 0.85;
+  }
+
+  
 /* End of style.css */
