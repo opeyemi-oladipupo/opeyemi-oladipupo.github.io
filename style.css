@@ -1129,9 +1129,9 @@ ul, ol {
 }
 
 /* ============================================================
-   CONTACT
+   CONTACT OLD
    ============================================================ */
-.contact {
+   /*.contact {
   background: var(--bg-2);
   border-top: 1px solid var(--border);
 }
@@ -1186,6 +1186,90 @@ ul, ol {
 
 .contact-item:hover {
   color: var(--text);
+} */
+
+
+/* ============================================================
+   CONTACT (NEW FIXED RESPONSIVE VERSION)
+   ============================================================ */
+.contact {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  overflow-x: hidden; /* prevents side scroll */
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-10);
+  padding: 0 1rem;
+}
+
+/* Text */
+.contact-text {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: var(--s-6);
+  max-width: 600px;
+}
+
+/* LINKS CONTAINER */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;              /* IMPORTANT */
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* EACH ITEM */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  white-space: nowrap; /* prevents text breaking */
+  transition: all 0.25s ease;
+}
+
+.contact-item i {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+/* hover */
+.contact-item:hover {
+  color: var(--text);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+/* MOBILE FIX */
+@media (max-width: 480px) {
+  .contact-links {
+    flex-direction: column;   /* stack nicely */
+    align-items: stretch;
+  }
+
+  .contact-item {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 
