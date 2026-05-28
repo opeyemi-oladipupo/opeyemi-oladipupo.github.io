@@ -790,6 +790,13 @@ ul, ol {
   box-shadow: var(--shadow-lg);
 }
 
+
+
+
+
+
+
+
 .project-img-wrap {
   position: relative;
   overflow: hidden;
@@ -808,12 +815,23 @@ ul, ol {
   color: rgba(255,255,255,0.2);
 }
 
-/* Swap placeholder for real img tag */
-.project-img-placeholder img {
+.project-img-wrap {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 0; /* 🔥 remove curve */
+}
+
+.project-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  border-radius: 0;
 }
+
+
+
+
 
 .project-overlay {
   position: absolute;
