@@ -19,6 +19,14 @@
 
 <body>
 
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <button class="lightbox-prev" id="prevBtn">&#10094;</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-next" id="nextBtn">&#10095;</button>
+</div>
+
   <!-- ========== SCROLL PROGRESS BAR ========== -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -392,7 +400,7 @@
               <span class="cert-status in-progress">In Progress</span>
               <!-- Certificate Buttons -->
             <div class="cert-links">
-              <a href="#" target="_blank" class="cert-btn">View Certificate</a>
+              <a href="#" class="cert-btn lightbox-trigger" data-img="images/certs/meta-backend.png">View Certificate</a>
             </div>
             </div>
           </div>
@@ -404,12 +412,10 @@
               <span class="cert-status completed">Completed</span>
               <!-- Certificate Buttons -->
             <div class="cert-links">
-              <a href="images/Certs/Scientific-computing-with-python-cert.jpg" target="_blank" class="cert-btn">View Certificate</a>
+              <a href="javascript:void(0)" class="cert-btn lightbox-trigger" class="lightbox-trigger" data-img="C:\Users\Owner\Desktop\portfolio\images\certs\Scientific-computing-with-python-cert.jpg">View Certificate</a>
             </div>
             </div>
           </div>
-
-          
 
           <div class="cert-card reveal">
             <div class="cert-body">
@@ -418,7 +424,7 @@
               <span class="cert-status completed">Completed</span>
               <!-- Certificate Buttons -->
             <div class="cert-links">
-              <a href="images/Certs/Javascript Certification.jpeg" target="_blank" class="cert-btn">View Certificate</a>
+              <a href="javascript:void(0)" class="cert-btn lightbox-trigger" data-img="C:\Users\Owner\Desktop\portfolio\images\certs\Javascript Certification.jpeg">View Certificate</a>
             </div>
             </div>
           </div>
@@ -430,7 +436,7 @@
               <span class="cert-status completed">Completed</span>
               <!-- Certificate Buttons -->
             <div class="cert-links">
-              <a href="images/Certs/responsive-web-design-cert.jpg" target="_blank" class="cert-btn">View Certificate</a>
+              <a href="javascript:void(0)" class="cert-btn lightbox-trigger" data-img="C:\Users\Owner\Desktop\portfolio\images\certs\responsive-web-design-cert.jpg">View Certificate</a>
             </div>
             </div>
           </div>
@@ -550,6 +556,7 @@
       </div>
     </div>
   </footer>
+
 
   <script src="script.js"></script>
 </body>
