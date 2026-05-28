@@ -848,27 +848,6 @@ ul, ol {
   opacity: 1;
 }
 
-.overlay-btn {
-  padding: 0.65rem 1.4rem;
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: var(--r-md);
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--white);
-  transition: background var(--t-fast), border-color var(--t-fast);
-  transform: translateY(6px);
-  transition: opacity var(--t-base), transform var(--t-base), background var(--t-fast);
-}
-
-.project-card:hover .overlay-btn {
-  transform: translateY(0);
-}
-
-.overlay-btn:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-}
-
 .project-body {
   padding: var(--s-6);
 }

@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `.lightbox-trigger[data-group="${group}"]`
       ));
 
-      currentIndex = parseInt(el.dataset.index);
+      currentIndex = images.indexOf(el);
 
       showImage();
       lightbox.style.display = "flex";
