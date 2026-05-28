@@ -441,12 +441,15 @@ ul, ol {
   font-weight: 300;
 }
 
+
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.1rem);
   color: var(--text-muted);
   line-height: 1.75;
-  max-width: 520px;
+  max-width: 550px;
   margin-bottom: var(--s-10);
+
+  text-align: justify;
 }
 
 .hero-actions {
