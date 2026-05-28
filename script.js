@@ -189,58 +189,78 @@ if (backToTop) {
 }
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
   const closeBtn = document.getElementById("lightboxClose");
 
-  let currentIndex = 0;
-  let currentGroup = [];
   let images = [];
+  let currentIndex = 0;
 
-  // collect all grouped images
+  // =========================
+  // CERTIFICATES (SINGLE IMAGE)
+  // =========================
+  document.querySelectorAll(".cert-lightbox").forEach(el => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const img = el.dataset.img;
+
+      lightboxImg.src = img;
+      lightbox.style.display = "flex";
+
+      // disable gallery mode
+      images = [];
+    });
+  });
+
+  // =========================
+  // PROJECTS (GALLERY MODE)
+  // =========================
   document.querySelectorAll(".lightbox-trigger").forEach(el => {
-
     el.addEventListener("click", (e) => {
       e.preventDefault();
 
       const group = el.dataset.group;
 
-      // get all images in same group
       images = Array.from(document.querySelectorAll(
         `.lightbox-trigger[data-group="${group}"]`
       ));
 
       currentIndex = parseInt(el.dataset.index);
 
-      openLightbox();
+      showImage();
+      lightbox.style.display = "flex";
     });
   });
 
-  function openLightbox() {
-    lightbox.style.display = "flex";
-    showImage();
-  }
-
   function showImage() {
-    const imgEl = images[currentIndex];
-    const src = imgEl.getAttribute("data-img") || imgEl.src;
+    const el = images[currentIndex];
+    if (!el) return;
 
+    const src = el.dataset.img || el.src;
     lightboxImg.src = src;
   }
 
-  function nextImage() {
+  function next() {
+    if (images.length === 0) return;
     currentIndex = (currentIndex + 1) % images.length;
     showImage();
   }
 
-  function prevImage() {
+  function prev() {
+    if (images.length === 0) return;
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage();
   }
 
-  // close
+  // =========================
+  // CONTROLS
+  // =========================
   closeBtn.addEventListener("click", () => {
     lightbox.style.display = "none";
   });
@@ -251,15 +271,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // keyboard support
   document.addEventListener("keydown", (e) => {
     if (lightbox.style.display !== "flex") return;
 
-    if (e.key === "ArrowRight") nextImage();
-    if (e.key === "ArrowLeft") prevImage();
     if (e.key === "Escape") lightbox.style.display = "none";
+    if (e.key === "ArrowRight") next();
+    if (e.key === "ArrowLeft") prev();
   });
 
 });
-
-
