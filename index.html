@@ -1,585 +1,555 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Opeyemi Oladipupo - Web Developer & IT Support Technician . View my portfolio of website projects.">
-    <meta name="author" content="Opeyemi Oladipupo">
-
-<!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Opeyemi Oladipupo - Portfolio">
-    <meta property="og:description" content="Web Developer | IT Support Technician">
-    <meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Opeyemi Oladipupo - Portfolio">
-    <meta name="twitter:description" content="Web Developer | IT Support Technician">
-
-<!-- Page Title & Favicon -->
-    <title>Opeyemi Oladipupo -  Web Developer </title>
-    <link rel="icon" type="image/png" href="images/me.jpg">
-
-<!-- Fonts & Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-
-<!-- GLightbox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frontend & WordPress Developer based in Nigeria. I build responsive websites for individuals, brands, and businesses." />
+  <meta name="keywords" content="Frontend Developer, WordPress Developer, Nigeria, Web Development, HTML, CSS, JavaScript" />
+  <meta property="og:title" content="Opeyemi Oladipupo - Frontend & WordPress Developer" />
+  <meta property="og:description" content="I build responsive websites for individuals, brands, and businesses." />
+  <meta property="og:type" content="website" />
+  <title>Opeyemi Oladipupo - Frontend & WordPress Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav-brand">Opeyemi Oladipupo</div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="hamburger"></span>
-            </button>
 
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+  <!-- ========== SCROLL PROGRESS BAR ========== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">Opeyemi Oladipupo<span class="logo-dot"></span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#stack" class="nav-link">Stack</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-container">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Available for Work
+        </div>
+        <h1 class="hero-headline reveal">
+          I craft digital<br />
+          <span class="headline-accent">experiences</span><br />
+          that perform
+        </h1>
+        <p class="hero-sub reveal">
+          Frontend & WordPress Developer based in Nigeria.<br />
+          Building responsive, accessible websites for brands, individuals, and businesses.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-meta reveal">
+          <div class="meta-item">
+            <span class="meta-number">3+</span>
+            <span class="meta-label">Years Building</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-number">20+</span>
+            <span class="meta-label">Projects Shipped</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-number">95%</span>
+            <span class="meta-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-col reveal">
+            <div class="about-img-placeholder img">
+              <img src="images/me.jpeg" alt="Opeyemi Oladipupo" class="about-img" />
+              <!-- <div class="about-img-accent"></div> -->
+            </div>
+          </div>
+          <div class="about-content-col reveal">
+            <p class="section-label">About Me</p>
+            <h2 class="section-heading">Developer with an<br /><em>eye for detail.</em></h2>
+            <p class="about-text">
+              Frontend & WordPress Developer based in Ogun, Nigeria, focused on building clean, responsive, and user-friendly websites.
+              I specialize in translating ideas into functional web experiences using HTML, CSS, JavaScript, and WordPress.
+              Currently expanding my backend development skills through the Meta Back-End Developer Professional Certificate, as part of my progression towards full-stack development.
+              <br />I value simplicity, performance, and usability in every project I build. 
+            </p>
+            <div class="about-chips">
+              <span class="chip">📍 Ogun, Nigeria</span>
+              <span class="chip">💼 Open to Work</span>
+            </div>
+            <a href="#" class="btn btn-outline" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TECH STACK SECTION ========== -->
+    <section class="stack section" id="stack">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Tools & Technologies</p>
+          <h2 class="section-heading">My Tech Stack</h2>
+          <p class="section-desc">Technologies I use to build production-ready websites and web experiences.</p>
+        </div>
+        <div class="stack-grid">
+
+          <div class="stack-card reveal" data-delay="0">
+            <div class="stack-icon">
+              <i class="fab fa-html5"></i> 
+            </div>
+            <h3 class="stack-name">HTML5</h3>
+            <p class="stack-level">Semantic markup, accessibility, SEO structure</p>
+          </div>
+
+          <div class="stack-card reveal" data-delay="1">
+            <div class="stack-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3 class="stack-name">CSS3</h3>
+            <p class="stack-level">Flexbox, Grid, animations, responsive design</p>
+          </div>
+
+          <div class="stack-card reveal" data-delay="2">
+            <div class="stack-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3 class="stack-name">JavaScript</h3>
+            <p class="stack-level">DOM manipulation, ES6+, async/await, APIs</p>
+          </div>
+
+          <div class="stack-card reveal" data-delay="3">
+            <div class="stack-icon">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <h3 class="stack-name">WordPress</h3>
+            <p class="stack-level">Themes, plugins, custom post types, WooCommerce</p>
+          </div>
+
+          <div class="stack-card reveal" data-delay="4">
+            <div class="stack-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3 class="stack-name">Git & GitHub</h3>
+            <p class="stack-level">Version control, branching, collaboration</p>
+          </div>
+
+          <div class="stack-card reveal" data-delay="5">
+            <div class="stack-icon">
+              <i class="fas fa-mobile-screen"></i>
+            </div>
+            <h3 class="stack-name">Responsive Design</h3>
+            <p class="stack-level">Mobile-first, fluid layouts, cross-browser</p>
+          </div>
+
+          <div class="stack-card reveal" data-delay="6">
+            <div class="stack-icon">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <h3 class="stack-name">SEO & Visibility</h3>
+            <p class="stack-level"> On-page SEO, Local SEO, Performance optimization </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">What I Offer</p>
+          <h2 class="section-heading">Services</h2>
+          <p class="section-desc">From concept to launch, I help you build a web presence that works.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-number">01</div>
+            <h3 class="service-title">Custom Website Development</h3>
+            <p class="service-desc">Hand-coded HTML, CSS & JavaScript websites built from scratch; fast, accessible, and pixel-perfect on every screen.</p>
+            <ul class="service-list">
+              <li>Responsive & mobile-first</li>
+              <li>Performance optimized</li>
+              <li>Clean semantic code</li>
             </ul>
-        </nav>
-    </header>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-number">02</div>
+            <h3 class="service-title">WordPress Development</h3>
+            <p class="service-desc">Custom WordPress sites, theme customization, and plugin integration for individuals and businesses.</p>
+            <ul class="service-list">
+              <li>Theme customization</li>
+              <li>WooCommerce setup</li>
+              <li>Plugin integration</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-number">03</div>
+            <h3 class="service-title">Website Redesign</h3>
+            <p class="service-desc">Transform your outdated website into a modern, professional experience that builds trust and drives conversions.</p>
+            <ul class="service-list">
+              <li>Modern UI overhaul</li>
+              <li>Performance improvement</li>
+              <li>Mobile optimization</li>
+            </ul>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-number">04</div>
+            <h3 class="service-title">SEO & Local Visibility</h3>
+            <p class="service-desc">Improve your website's search engine ranking and local presence with effective SEO strategies.</p>
+            <ul class="service-list">
+              <li>Keyword research</li>
+              <li>On-page optimization</li>
+              <li>Local SEO setup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <p class="hero-greeting">Hi there, I'm</p>
-                    <h1 class="hero-title">Opeyemi Oladipupo</h1>
-                    <p class="hero-subtitle">Web Developer | IT Support Technician</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Hire Me 💼</a>
-                        <a href="#projects" class="btn btn-secondary">View Projects</a>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <div class="glow-ring"></div>
-                    <img src="images/me.jpg" alt="Opeyemi Oladipupo headshot" class="hero-image">
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content fade-in">
-                    <p class="about-text text-justify">
-                        I build responsive, user-friendly websites and provide practical digital solutions for individuals and businesses.
-                        My experience includes developing websites with WordPress, HTML, CSS, and JavaScript, managing hosting and deployment environments, and improving business visibility through basic SEO optimization and Google Business Profile setup.
-                        I also provide technical support services including hardware troubleshooting, software installation, and system maintenance for laptops and mobile devices.
-                        I focus on delivering reliable, functional, and easy-to-maintain solutions that support real business needs.
-                        I have worked on websites across multiple industries and continue to assist clients with website management, optimization, and technical operations.
-                        I am open to freelance, collaborative, and full-time opportunities in web development, IT support, and technical operations.
-                    </p>
-                    
-                    <div class="tech-stack">
-                        <h3 class="tech-heading"> Web Development & Digital Tools</h3>
-                        <div class="tech-badges">
-                            <span class="badge"><i class="fab fa-html5"></i> HTML</span>
-                            <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
-                            <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="badge"><i class="fab fa-wordpress"></i> WordPress</span>
-                            <span class="badge"><i class="fa-brands fa-git-alt"></i> Git</span>
-                            <span class="badge"><i class="fas fa-server"></i> Hosting and Deployment</span>
-                        </div>
-                    </div>
-
-                    <div class="tech-stack">
-                        <h3 class="tech-heading"> <br> IT Support & Systems </h3>
-                        <div class="tech-badges">
-                            <span class="badge"><i class="fas fa-tools"></i> Hardware Troubleshooting</span>
-                            <span class="badge"><i class="fas fa-download"></i> Software Installation</span>
-                            <span class="badge"><i class="fas fa-cogs"></i> System Maintenance </span>
-                            <span class="badge"><i class="fas fa-network-wired"></i> Basic Networking</span>
-                        </div>
-                    </div>                     
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="projects" id="services">
-            <div class="container">
-                <h2 class="section-title">Services</h2>
-        
-                <!-- Web Development Services -->
-                <div class="project-category">
-                    <h3 class="category-heading"></h3>
-                    <div class="projects-grid">
-                
-                        <article class="project-card fade-in">
-                            <div class="project-info">
-                                <h4 class="project-title">Website Development</h4>
-                                <p class="project-description">
-                                    Building responsive and user-friendly websites using WordPress and front-end technologies.
-                                </p>
-                            </div>
-                        </article>
-        
-                        <article class="project-card fade-in">
-                            <div class="project-info">
-                                <h4 class="project-title">Website Optimization</h4>
-                                <p class="project-description">
-                                    Improving website speed, layout, and user experience for better performance and engagement.
-                                </p>
-                            </div>
-                        </article>
-        
-                        <article class="project-card fade-in">
-                            <div class="project-info">
-                                <h4 class="project-title">Technical Support</h4>
-                                <p class="project-description">
-                                    System setup, troubleshooting, and device repair or maintenance for hardware and software issues.
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="project-card fade-in">
-                            <div class="project-info">
-                                <h4 class="project-title">SEO & Business Visibility</h4>
-                                <p class="project-description">
-                                    Helping businesses improve online visibility through basic SEO optimization and Google Business Profile setup.
-                                </p>
-                            </div>
-                        </article>
-        
-                    </div>
-                </div>
-                
-                </div>
-            </div>
-        </section>
-        
-
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-
-
-                <!-- Projects -->
-                <div class="project-category">
-                    <h3 class="category-heading"></h3>
-                    <div class="projects-grid">
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/popoola-pc.jpg" alt="Popoola Sounds and Events" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Popoola Sounds and Events</h4>
-                                <p class="project-description">
-                                    A professional event management and sound company delivering quality events across Nigeria.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/Web Projects/popoola-pc.jpg" class="btn-small btn-demo glightbox" data-gallery="popoola">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/Web Projects/popoola-pc.jpg" class="glightbox extra-img" data-gallery="popoola"></a>
-                                    <a href="images/Web Projects/popoola-mv.jpeg" class="glightbox extra-img" data-gallery="popoola"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="https://popoolasoundsevents.com.ng/" target="_blank" class="btn-small btn-github"> <i class="fas fa-globe"> </i> Live Demo</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/abitem-pc.jpg" alt="Abitem Nigeria Limited" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Abitem Nigeria Limited</h4>
-                                <p class="project-description">
-                                    A professional Construction Company delivering quality residential, commercial, and institutional projects across Nigeria.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/Web Projects/abitem-mv.jpeg" class="btn-small btn-demo glightbox" data-gallery="abitem">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/Web Projects/abitem-mv1.jpeg" class="glightbox extra-img" data-gallery="abitem"></a>
-                                    <a href="images/Web Projects/abitem-mv2.jpeg" class="glightbox extra-img" data-gallery="abitem"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="https://abitemconstruction.com.ng/index.html" target="_blank" class="btn-small btn-github"> <i class="fas fa-globe"> </i> Live Demo</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/adgad-pc.png" alt="AD-GAD Nigeria Limited" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">AD-GAD Nigeria Limited</h4>
-                                <p class="project-description">
-                                    A construction company specializing in building and civil engineering projects, delivering quality infrastructure across Nigeria.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/Web Projects/adgad-mv.jpg" class="btn-small btn-demo glightbox" data-gallery="adgad">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/Web Projects/adgad-gmb.png" class="glightbox extra-img" data-gallery="adgad"></a>
-                                    <a href="images/Web Projects/adgad-mv.jpg" class="glightbox extra-img" data-gallery="adgad"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="#projects" target="_blank" class="btn-small btn-github"> <i class="fas fa-globe"> </i> Live Demo</a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/summy-pc.png" alt="Summy Solution & Technology website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Summy Solution & Technology</h4>
-                                <p class="project-description">
-                                    Experts in air conditioning, refrigeration, mechanical services, and plumbing for reliable comfort.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/Web Projects/summy-pc.png" class="btn-small btn-demo glightbox" data-gallery="summy">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/summy2.jpg" class="glightbox extra-img" data-gallery="summy"></a>
-                                    <a href="images/summy3.jpg" class="glightbox extra-img" data-gallery="summy"></a>
-                                    <a href="images/Summy GMB.png" class="glightbox extra-img" data-gallery="summy"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="#projects" target="_blank" class="btn-small btn-github"> <i class="fas fa-globe"> </i> Live Demo</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/npv-pc.png" alt="Nigeria Property Verification website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Nigeria Property Verification</h4>
-                                <p class="project-description">
-                                    Helps buyers avoid fake property deals by verifying ownership and providing honest appraisals.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/npv1.png" class="btn-small btn-demo glightbox" data-gallery="npv">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/Web Projects/npv-mv.jpg" class="glightbox extra-img" data-gallery="npv"></a>
-                                    <a href="images/Web Projects/npv-mv1.jpg" class="glightbox extra-img" data-gallery="npv"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="https://nigeriapropertyverification.ng" target="_blank" class="btn-small btn-github"> <i class="fas fa-globe"> </i> Live Demo</a>
-                                </div>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-
-                <!-- More Web Projects -->
-                <div class="project-category">
-                    <details class="project-details">
-                        <summary class="category-heading">View more projects</summary>
-                    <div class="projects-grid">
-                        
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/tomveen-pc.png" alt="Tomveen Construction website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Tomveen Construction</h4>
-                                <p class="project-description">
-                                    Engineering & construction company building future-ready infrastructure with quality and innovation.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/Web Projects/tomveen-mv.jpg" class="btn-small btn-demo glightbox" data-gallery="tomveen">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/Web Projects/tomveen-pc.png" class="glightbox extra-img" data-gallery="tomveen"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="#projects" target="_blank" class="btn-small btn-github"> <i class="fas fa-globe"> </i> Live Demo</a>
-                                </div>
-                            </div>
-                        </article> 
-                        
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/mejohis-pc.png" alt="MEJOHISANDCOMPANY website" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">MEJOHISANDCOMPANY</h4>
-                                <p class="project-description">
-                                    Welding & fabrication, mechanical services, haulage, logistics, and general industrial solutions across Edo State.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/Web Projects/mejohis-mv.jpg" class="btn-small btn-demo glightbox" data-gallery="mejohis">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/Web Projects/mejohis-mv1.jpg" class="glightbox extra-img" data-gallery="mejohis"></a>
-                                    <a href="images/Web Projects/mejohis-mv2.jpg" class="glightbox extra-img" data-gallery="mejohis"></a>
-                                    <a href="images/Web Projects/mejohis-mv3.jpg" class="glightbox extra-img" data-gallery="mejohis"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="#projects" target="_blank" class="btn-small btn-github"> <i class="fas fa-globe"> </i> Live Demo</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="project-card fade-in">
-                            <div class="project-thumbnail">
-                                <img src="images/Web Projects/survey-form.png" alt="Developer Feedback Survey" loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <h4 class="project-title">Developer Feedback Survey</h4>
-                                <p class="project-description">
-                                    A short interactive survey form to gather user feedback. Built with HTML, CSS, and JavaScript.
-                                </p>
-                                <div class="project-links">
-                                    <!-- View Project opens the lightbox gallery -->
-                                    <a href="images/Web Projects/survey-form.png" class="btn-small btn-demo glightbox" data-gallery="DFS">View Project</a>
-                                    <!-- Additional screenshots for the same project -->
-                                    <a href="images/Web Projects/survey-form-2.png" class="glightbox extra-img" data-gallery="DFS"></a>
-                                    <!-- Live Demo button with globe icon -->
-                                    <a href="https://opeyemi-oladipupo.github.io/Developer-Feedback-Survey/" target="_blank" class="btn-small btn-github"> <i class="fab fa-github"> </i>Live Demo</a>
-                                </div>
-                            </div>
-                        </article>
-
-                    </div>
-                    </details>
-                </div>
-            
-            </div>
-        </section>
-
-
-<!-- Field Experience Section -->
-<section class="experience" id="experience">
-    <div class="container">
-        <h2 class="section-title">Technical Gallery</h2>
-
-        <!-- <p class="section-subtitle"> Hands-on technical support work involving hardware troubleshooting, device repair, and system diagnostics.</p> -->
-
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Selected Work</p>
+          <h2 class="section-heading">Projects</h2>
+          <p class="section-desc">A selection of projects I've built for clients and personal exploration.</p>
+        </div>
         <div class="projects-grid">
 
-            <!-- Laptop Repairs -->
-            <article class="project-card fade-in">
-                <div class="project-thumbnail">
-                    <img src="images/Technical Support Images/computer/laptop repair work.jpg" alt="Laptop repair work" loading="lazy">
-                </div>
-
-                <div class="project-info">
-                    <h4 class="project-title">Laptop Diagnostics & Repairs</h4>
-                    <p class="project-description">
-                        Hardware troubleshooting, component replacement, and system restoration for laptop devices.
-                    </p>
-
-                    <div class="project-links">
-                        <a href="images/Technical Support Images/computer/laptop1.jpg" class="btn-small btn-demo glightbox" data-gallery="repairs">
-                            View Gallery
-                        </a>
-
-                        <a href="images/Technical Support Images/computer/laptop2.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop3.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop4.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop5.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop6.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop7.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop8.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop9.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop10.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop11.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop12.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop13.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                        <a href="images/Technical Support Images/computer/laptop14.jpg" class="glightbox extra-img" data-gallery="repairs"></a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Phone Repairs -->
-            <article class="project-card fade-in">
-                <div class="project-thumbnail">
-                    <img src="images/Technical Support Images/mobile/mobile repair work.jpg" alt="Phone repair work" loading="lazy">
-                </div>
-
-                <div class="project-info">
-                    <h4 class="project-title">Mobile Device Repairs</h4>
-                    <p class="project-description">
-                        Screen replacement, fault diagnosis, and general maintenance of smartphone devices.
-                    </p>
-
-                    <div class="project-links">
-                        <a href="images/Technical Support Images/mobile/mobile1.jpg" class="btn-small btn-demo glightbox" data-gallery="repairs2">
-                            View Gallery
-                        </a>
-
-                        <a href="images/Technical Support Images/mobile/mobile2.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile3.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile4.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile5.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile6.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile7.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile8.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile9.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile10.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile11.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile12.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile13.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile14.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile15.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile16.jpeg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile17.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile18.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile19.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                        <a href="images/Technical Support Images/mobile/mobile20.jpg" class="glightbox extra-img" data-gallery="repairs2"></a>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-    </div>
-</section>
-
-
-        <!-- Certifications Section -->
-<section class="certifications" id="certifications">
-    <div class="container">
-        <h2 class="section-title">Certifications</h2>
-
-        <div class="projects-grid">
-
-            <!-- freeCodeCamp Responsive Web Design -->
-            <article class="project-card fade-in">
-                <div class="project-thumbnail">
-                    <img src="images/Web Certs/responsive-web-design-cert.jpg" alt="freeCodeCamp Responsive Web Design Certificate" loading="lazy">
-                </div>
-
-                <div class="project-info">
-                    <h4 class="project-title">Responsive Web Design</h4>
-                    <p class="project-description">freeCodeCamp</p>
-
-                    <div class="project-links">
-                        <a href="images/Web Certs/responsive-web-design-cert.jpg" target="_blank" class="btn-small btn-demo">View Certificate</a>
-                        <a href="https://freecodecamp.org/certification/fcc-2f1e12b3-df3e-415b-b10b-2d7a7519383f/responsive-web-design" target="_blank" class="btn-small btn-github">Verify Online</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- freeCodeCamp JavaScript Certificate -->
-            <article class="project-card fade-in">
-                <div class="project-thumbnail">
-                    <img src="images/Web Certs/Javascript Certification.jpeg" alt="freeCodeCamp JavaScript Certificate" loading="lazy">
-                </div>
-
-                <div class="project-info">
-                    <h4 class="project-title">JavaScript</h4>
-                    <p class="project-description">freeCodeCamp</p>
-
-                    <div class="project-links">
-                        <a href="images/Web Certs/Javascript Certification.jpeg" target="_blank" class="btn-small btn-demo">View Certificate</a>
-                        <a href="https://www.freecodecamp.org/certification/fcc-2f1e12b3-df3e-415b-b10b-2d7a7519383f/javascript-v9" target="_blank" class="btn-small btn-github">Verify Online</a>
-                    </div>
-                </div>
-
-            </article>
-        </div>
-    </div>
-</section>
-
-
-<!-- Education Section -->
-<section class="education" id="education">
-    <div class="container">
-        <h2 class="section-title">Education</h2>
-
-        <div class="projects-grid">
-
-            <!-- BSc ( In View ) -->
-            <article class="project-card fade-in">
-                <div class="project-info">
-                    <h4 class="project-title">Bachelor of Science <br> (BSC)</h4>
-                    <p class="project-description">Biology - National Open University of Nigeria</p>
-                    <p class="project-description"> (In progress)</p>
-                </div>
-            </article>
-
-            <!-- HND Bachelor’s-Level Qualification (NQF Level 6) -->
-            <article class="project-card fade-in">
-                <div class="project-info">
-                    <h4 class="project-title">Higher National Diploma (HND)</h4>
-                    <p class="project-description">Microbiology - Moshood Abiola Polytechnic</p>
-                    <p class="project-description">2022 – 2024</p>
-                </div>
-            </article>
-
-            <!-- ND -->
-            <article class="project-card fade-in">
-                <div class="project-info">
-                    <h4 class="project-title">National Diploma <br> (ND)</h4>
-                    <p class="project-description">Science Laboratory Technology - The Polytechnic Ibadan</p>
-                    <p class="project-description">2017 – 2019</p>
-                </div>
-            </article>
-
-        </div>
-    </div>
-</section>
-  
-
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2 class="section-title">Let's Connect</h2>
-                <div class="contact-content fade-in">
-                    <p class="contact-intro">I’m always open to discussing new projects, collaborations, or ideas. Let’s build something amazing together.</p>
-                    <div class="contact-links">
-                        <a href="https://wa.me/+2348036627218" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Whatsapp Opeyemi">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>Whatsapp</span>
-                        </a>
-                        <a href="mailto:oladipupoope@gmail.com" class="contact-item" aria-label="Email Opeyemi">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/opeyemi-oladipupo-2a40bb222/" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn profile">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/opeyemi-oladipupo" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="GitHub profile">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                </div>
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder" style="--ph-color: #0f2027">
+                <span>Project Screenshot</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Business Landing Page</h3>
+              <p class="project-desc">A responsive landing page for a Lagos-based logistics company, featuring animated hero, service cards, and contact form integration.</p>
+              <div class="project-links">
+                <a href="#" class="project-link primary" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link ghost" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Opeyemi Oladipupo. All rights reserved.</p>
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder" style="--ph-color: #1a0533">
+                <span>Project Screenshot</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">WooCommerce</span>
+                <span class="tag">CSS</span>
+              </div>
+              <h3 class="project-title">E-Commerce Store</h3>
+              <p class="project-desc">Full-featured WooCommerce store for a Nigerian fashion brand — custom theme, product pages, payment gateway integration.</p>
+              <div class="project-links">
+                <a href="#" class="project-link primary" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link ghost" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder" style="--ph-color: #001a0e">
+                <span>Project Screenshot</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <h3 class="project-title">Personal Finance Tracker</h3>
+              <p class="project-desc">A JavaScript-powered expense tracker with local storage persistence, category filtering, and visual spending summaries.</p>
+              <div class="project-links">
+                <a href="#" class="project-link primary" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link ghost" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder" style="--ph-color: #1a0a00">
+                <span>Project Screenshot</span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="overlay-btn" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">CSS</span>
+                <span class="tag">SEO</span>
+              </div>
+              <h3 class="project-title">Corporate Blog & Portfolio</h3>
+              <p class="project-desc">Multi-page WordPress website with custom theme, blog, SEO optimization, and contact form for a Nigerian consultant.</p>
+              <div class="project-links">
+                <a href="#" class="project-link primary" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link ghost" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Floating Hire Me Button (Mobile Only) -->
-    <a href="#contact" class="floating-hire-btn" aria-label="Hire me">Hire Me 💼</a>
+    <!-- ========== CERTIFICATIONS SECTION ========== -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Credentials</p>
+          <h2 class="section-heading">Certifications</h2>
+        </div>
+        <div class="certs-grid">
+          
+          <div class="cert-card reveal">
+            <div class="cert-body">
+              <h3 class="cert-title">Back-End Developer Professional Certificate</h3>
+              <p class="cert-issuer">Meta</p>
+              <span class="cert-status in-progress">In Progress</span>
+              <!-- Certificate Buttons -->
+            <div class="cert-links">
+              <a href="#" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+            </div>
+          </div>
 
-    <script src="script.js"></script>
+          <div class="cert-card reveal">
+            <div class="cert-body">
+              <h3 class="cert-title">Scientific Computing with Python</h3>
+              <p class="cert-issuer">freeCodeCamp</p>
+              <span class="cert-status completed">Completed</span>
+              <!-- Certificate Buttons -->
+            <div class="cert-links">
+              <a href="images/Certs/Scientific-computing-with-python-cert.jpg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+            </div>
+          </div>
 
-    <!-- GLightbox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script>
-      // Initialize GLightbox
-      const lightbox = GLightbox({
-        selector: '.glightbox'
-      });
-    </script>
+          
+
+          <div class="cert-card reveal">
+            <div class="cert-body">
+              <h3 class="cert-title">JavaScript Algorithms & Data Structures</h3>
+              <p class="cert-issuer">freeCodeCamp</p>
+              <span class="cert-status completed">Completed</span>
+              <!-- Certificate Buttons -->
+            <div class="cert-links">
+              <a href="images/Certs/Javascript Certification.jpeg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+            </div>
+          </div>
+          
+          <div class="cert-card reveal">
+            <div class="cert-body">
+              <h3 class="cert-title">Responsive Web Design Certification</h3>
+              <p class="cert-issuer">freeCodeCamp</p>
+              <span class="cert-status completed">Completed</span>
+              <!-- Certificate Buttons -->
+            <div class="cert-links">
+              <a href="images/Certs/Responsive-web-design-cert.jpg" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Background</p>
+          <h2 class="section-heading">Education</h2>
+        </div>
+        <div class="education-timeline">
+          <div class="edu-item reveal">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-year">2025 – present</div>
+              <h3 class="edu-degree">BSC Biology</h3>
+              <p class="edu-school"> National Open University of Nigeria</p>
+              <span class="cert-status in-progress">In Progress</span>
+            </div>
+          </div>
+          <div class="edu-item reveal">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-year">2022 – 2024</div>
+              <h3 class="edu-degree">HND Microbiology</h3>
+              <p class="edu-school">Moshood Abiola Polytechnic, Abeokuta</p>
+              <span class="cert-status completed">Completed</span>
+            </div>
+          </div>
+          <div class="edu-item reveal">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-year">2017 – 2019</div>
+              <h3 class="edu-degree">ND Science Laboratory Technology</h3>
+              <p class="edu-school">The Polytechnic, Ibadan</p>
+              <span class="cert-status completed">Completed</span>
+            </div>
+          </div>
+        </div>
+        <p class="education-note">
+          NYSC Completed (2025 - 2026) • Certificate Available
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="contact-left">
+            <p class="section-label">Get In Touch</p>
+            <h2 class="section-heading">Let's work<br /><em>together.</em></h2>
+            <p class="contact-text">
+              Whether you need a new website, a WordPress redesign, or just want to discuss a project - I'm open to conversations.
+            </p>
+
+            <div class="contact-links">
+              
+              <a href="https://wa.me/2348036627218" class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+
+              <a href="mailto:oladipupoope@gmail.com" class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email</span>
+              </a>
+
+              <a href="https://github.com/opeyemi-oladipupo" class="contact-item" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/opeyemi-oladipupo-2a40bb222" class="contact-item" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="#home" class="nav-logo">Opeyemi Oladipupo<span class="logo-dot"></span></a>
+          <p class="footer-tagline">Frontend & WordPress Developer<br />Based in Ogun, Nigeria.</p>
+        </div>
     
+        <div class="footer-socials">
+          <a href="https://github.com/opeyemi-oladipupo" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/opeyemi-oladipupo-2a40bb222" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:oladipupoope@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Opeyemi Oladipupo. Crafted with intention.</p>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
