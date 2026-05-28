@@ -1122,12 +1122,13 @@ ul, ol {
 
 .education-note {
   margin-top: var(--s-4);
+  margin-bottom: var(--s-8);
   font-size: 0.8rem;
   color: var(--text-dim);
   font-family: var(--font-mono);
   text-align: center;
   padding: var(--s-3);
-  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   color: white;
 }
 
@@ -1218,13 +1219,13 @@ ul, ol {
 
 /* Text */
 .contact-text {
-  /*text-align: center;*/
+  text-align: center;
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.75;
   margin-bottom: var(--s-6);
   max-width: 600px;
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 /* LINKS CONTAINER */
