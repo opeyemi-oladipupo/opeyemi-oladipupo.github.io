@@ -278,5 +278,27 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "ArrowRight") next();
     if (e.key === "ArrowLeft") prev();
   });
+  document.getElementById("nextBtn")
+    .addEventListener("click", next);
+  document.getElementById("prevBtn")
+    .addEventListener("click", prev);
+  });
 
+
+  let startX = 0;
+
+lightbox.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+});
+
+lightbox.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    next();
+  }
+
+  if (endX - startX > 50) {
+    prev();
+  }
 });
