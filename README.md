@@ -4,8 +4,8 @@ This is my personal developer portfolio showcasing my work in **Web Development*
 
 ### Sections
 - About Me
-- Projects (WordPress, Traditional Web, Data)
+- Projects (WordPress, Traditional Websites)
 - Contact Links
 
 ### Live Demo
-Deployed on GitHub Pages: [link here after deployment]
+Deployed on GitHub Pages: [https://opeyemi-oladipupo.github.io/]
