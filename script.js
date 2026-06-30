@@ -1,6 +1,6 @@
 /* ============================================================
    PORTFOLIO — script.js
-   Author: Your Name
+   Author: Opeyemi Oladipupo
    ============================================================ */
 
 'use strict';
@@ -187,9 +187,6 @@ if (backToTop) {
     backToTop.style.opacity = window.scrollY > 500 ? '1' : '0.3';
   });
 }
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
