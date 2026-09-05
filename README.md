@@ -1,11 +1,32 @@
 # Developer Portfolio
 
-This is my personal developer portfolio showcasing my work in **Web Development** projects.
+My personal developer portfolio showcasing my web development projects, technical skills, certifications, and services.
 
-### Sections
-- About Me
-- Projects (WordPress, Traditional Websites)
-- Contact Links
 
-### Live Demo
-Deployed on GitHub Pages: [https://opeyemi-oladipupo.github.io/]
+## Built With
+
+* HTML5
+* CSS3
+* JavaScript
+
+## Features
+
+* Responsive design
+* Project showcase
+* Services section
+* Certifications
+* Education and professional background
+* Contact links
+
+## Live Demo
+
+https://opeyemi-oladipupo.github.io/
+
+## Author
+
+**Opeyemi Oladipupo**
+
+Frontend & WordPress Developer
+
+* GitHub: https://github.com/opeyemi-oladipupo
+* Portfolio: https://opeyemi-oladipupo.github.io/

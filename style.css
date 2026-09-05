@@ -538,10 +538,10 @@ ul, ol {
 }
 
 .about-img-placeholder {
-  aspect-ratio: 4/5;
+  aspect-ratio: 5/5;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
