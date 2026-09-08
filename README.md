@@ -2,7 +2,6 @@
 
 My personal developer portfolio showcasing my web development projects, technical skills, certifications, and services.
 
-
 ## Built With
 
 * HTML5
